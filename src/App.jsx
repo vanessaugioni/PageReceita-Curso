@@ -1,10 +1,12 @@
-import { Waffle } from "./assets/export";
+import { Waffle, Sun } from "./assets/export";
 import { Toggle } from "./components/toggle/index";
 
 export default function App() {
   return (
     <>
       <Toggle />
+
+      {/* <img className="Sun" src={Sun} alt="imagem" /> */}
      
       <main>
         <header>
