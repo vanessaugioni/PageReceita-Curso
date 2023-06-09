@@ -1,17 +1,19 @@
-.ToggleButton {
+.toggleButton {
+  margin-top: 1rem;
+  margin-left: 39rem;
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 40px;
   height: 20px;
   -webkit-appearance: none;
   outline: none;
-  background: #E0E0E0;
+  background: #262626;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.4s;
 }
-.ToggleButton::before {
+.toggleButton::before {
   content: "";
   position: absolute;
   top: 0;
@@ -23,4 +25,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
   transition: 0.4s;
+}
+.toggleButton:checked::before {
+  left: 20px;
 }/*# sourceMappingURL=style.css.map */
