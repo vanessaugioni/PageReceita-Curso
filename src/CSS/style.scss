@@ -40,10 +40,15 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    background: #ffffff;
+    background: #baafc4;
 
     &.checked {
-      background-color: red;
+      background-color: #523961;
+
+      h1, h2, figcaption, li, ol, p{
+        color: #eaeaea;
+        
+      }
     }
 
     height: 1000px;
@@ -79,7 +84,7 @@ body {
       figcaption {
         margin-top: 0.5rem;
         font-size: 12px;
-        color: #8f8f8f;
+        color:#1b1b1b;
         margin-left: 468px;
       }
     }

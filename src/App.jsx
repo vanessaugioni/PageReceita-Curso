@@ -13,8 +13,6 @@ export default function App() {
     <>
       <Toggle checked={checked} functionChecked={handleChecked} />
 
-      {/* <img className="Sun" src={Sun} alt="imagem" /> */}
-
       <main className={`main-page ${checked && 'checked'}`}>
         <header>
           <h1>Waffles Clássico</h1>
