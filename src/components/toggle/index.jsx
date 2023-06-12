@@ -1,22 +1,13 @@
 import "./style.scss";
 import { useEffect, useState } from "react";
 
-export function Toggle() {
-  const [checked, setChecked] = useState(false);
-
-  function handleChecked() {
-    setChecked(!checked);
-  }
-
-  useEffect(()=> {
-    console.log(checked)
-  },[checked])
+export function Toggle(props) {
 
   return (
     <input
       type="checkbox"
-      className={`toggleButton ${checked ? "checked" : ""}`}
-      onClick={handleChecked}
+      className={`toggleButton ${props.checked ? "checked" : ""}`}
+      onClick={props.functionChecked}
     />
   );
 }

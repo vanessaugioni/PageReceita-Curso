@@ -1,14 +1,21 @@
 import { Waffle, Sun } from "./assets/export";
 import { Toggle } from "./components/toggle/index";
+import { useState } from "react";
 
 export default function App() {
+  const [checked, setChecked] = useState(false);
+
+  function handleChecked() {
+    setChecked(!checked);
+  }
+
   return (
     <>
-      <Toggle />
+      <Toggle checked={checked} functionChecked={handleChecked} />
 
       {/* <img className="Sun" src={Sun} alt="imagem" /> */}
-     
-      <main>
+
+      <main className={`main-page ${checked && 'checked'}`}>
         <header>
           <h1>Waffles Clássico</h1>
 
